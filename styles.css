@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+
+*{margin: 0;
+padding: 0;
+box-sizing:border-box;
+}
+
+nav{
+    display: flex;
+    /* border: 3px solid red; */
+    justify-content:space-between;
+    align-items: center;
+    font-family: 'Croissant One', cursive;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 80px;
+
+
+}
+.left{
+    display: flex;
+    border: 3px solid red;
+    /* align-items: center; */
+    
+}
+ul{
+    display: flex;
+    gap: 1rem;
+    list-style:none ;
+
+}
+.social-icons{
+    display:flex ;
+    gap: 0.5rem;
+}
+
+.social-icons img{
+
+    height: 100%;
+
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 50%;
+    padding:3px;
+    
+}
+
+.icon:hover{
+    border:1px solid white;
+    background-color: black;
+
+}
+
+.icon:hover img{
+    filter:invert(1)
+}
+
+li a{
+    text-decoration: aliceblue;
+    color: black;
+    position: relative;
+
+}
+
+li a::after{
+    position: absolute;
+    left:0;
+    top: 100%;
+    content: "";
+    height: 5px;
+    width: 0px;
+    background-color: black;
+    transition: all 0.4s ease-in-out;
+}
+li a:hover::after{
+    width: 100%;
+}
+
+
+.photo img{
+    position:absolute;
+    height:350px;
+    right: 30cm ;
+    padding: 30px;
+
+}
